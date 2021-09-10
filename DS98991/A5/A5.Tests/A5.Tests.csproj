@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\A5\A5.csproj" />
+  </ItemGroup>
+  
+<ItemGroup>
+    <Content Include="TestData\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  
+<ItemGroup>
+  <None Remove="TestData\A5.TD3\In_1.txt" />
+  <None Remove="TestData\A5.TD3\In_2.txt" />
+  <None Remove="TestData\A5.TD3\In_3.txt" />
+  <None Remove="TestData\A5.TD3\In_4.txt" />
+  <None Remove="TestData\A5.TD3\In_5.txt" />
+  <None Remove="TestData\A5.TD3\Out_1.txt" />
+  <None Remove="TestData\A5.TD3\Out_2.txt" />
+  <None Remove="TestData\A5.TD3\Out_3.txt" />
+  <None Remove="TestData\A5.TD3\Out_4.txt" />
+  <None Remove="TestData\A5.TD3\Out_5.txt" />
+</ItemGroup>
+
+</Project>
